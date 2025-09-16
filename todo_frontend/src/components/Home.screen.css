@@ -1,0 +1,272 @@
+/* Canvas and frame */
+.home-screen {
+  width: 430px;
+  height: 932px;
+  position: relative;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-35);
+  overflow: hidden;
+}
+
+/* Root frame 'home' (1:49) aligns to 0,0 inside our screen container */
+.home-root {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 430px;
+  height: 932px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-35);
+}
+
+/* Foodgo title (1:50) */
+#n1-50 {
+  position: absolute;
+  left: 19px;
+  top: 28px;
+  width: 129px;
+  height: 61px;
+  font-family: var(--font-lobster);
+  font-size: var(--typo-5-size);
+  line-height: var(--typo-5-lh);
+  font-weight: 400;
+  color: var(--color-3c2f2f);
+}
+#n1-50 .text-span {
+  display: block;
+}
+
+/* Subtitle 'Order your favourite food!' (1:51) */
+#n1-51 {
+  position: absolute;
+  left: 19px;
+  top: 89px;
+  width: 238px;
+  height: 27px;
+  font-family: var(--font-poppins);
+  font-size: var(--typo-6-size);
+  line-height: var(--typo-6-lh);
+  font-weight: 500;
+  color: var(--color-6a6a6a);
+}
+
+/* Mask group (1:52) */
+#n1-52 {
+  position: absolute;
+  left: 351px;
+  top: 28px;
+  width: 60px;
+  height: 60px;
+}
+#n1-53 {
+  position: absolute;
+  left: 0px; top: 0px; width: 60px; height: 60px;
+  background: var(--color-d9d9d9);
+  border-radius: var(--radius-20);
+}
+#n1-54 {
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  width: 106px;
+  height: 73px;
+  overflow: hidden;
+}
+
+/* Group 3 (search + filter area) */
+#n1-55 {
+  position: absolute;
+  left: 19px;
+  top: 163px;
+  width: 392px;
+  height: 60px;
+}
+#n1-56 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 319px;
+  height: 60px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-0);
+}
+#n1-57 {
+  position: absolute; left: 332px; top: 0px; width: 60px; height: 60px;
+}
+#n1-58 {
+  position: absolute; left: 0; top: 0; width: 60px; height: 60px;
+  background: var(--color-ef2a39);
+  border-radius: var(--radius-20);
+}
+#n1-59 {
+  position: absolute; left: 18px; top: 18px; width: 24px; height: 24px; color: var(--color-ffffff);
+}
+#n1-60 {
+  position: absolute; left: 20px; top: 18px; width: 104px; height: 24px;
+}
+#n1-61 {
+  position: absolute; left: 0px; top: 0px; width: 24px; height: 24px; color: var(--color-3c2f2f);
+}
+#n1-62 {
+  position: absolute; left: 48px; top: 1px; width: 56px; height: 21px;
+  font-family: var(--font-roboto);
+  font-size: var(--typo-7-size);
+  line-height: var(--typo-7-lh);
+  font-weight: 500;
+  color: var(--color-3c2f2f);
+}
+
+/* Frame 9 */
+#n1-63 { position: absolute; left: -1px; top: 264px; width: 412px; height: 50px; }
+#n1-64 { position: absolute; left: 20px; top: 0px; width: 467px; height: 50px; }
+
+/* Category pill 'All' */
+#n1-65 { position: absolute; left: 0px; top: 0px; width: 75px; height: 50px; }
+#n1-66 { position: absolute; left: 0; top: 0; width: 75px; height: 50px;
+  background: var(--color-ef2a39); border-radius: var(--radius-20); box-shadow: var(--shadow-1);
+}
+#n1-67 {
+  position: absolute; left: 27px; top: 15px; width: 20px; height: 19px;
+  font-family: var(--font-inter); font-size: var(--typo-8-size);
+  line-height: var(--typo-8-lh); font-weight: 500; color: var(--color-f5f5f5);
+}
+
+/* 'Combos' */
+#n1-68 { position: absolute; left: 89px; top: 0px; width: 120px; height: 50px; }
+#n1-69 { position: absolute; left: 0; top: 0; width: 120px; height: 50px;
+  background: var(--color-f3f4f6); border-radius: var(--radius-20);
+}
+#n1-70 { position: absolute; left: 46px; top: 15px; width: 64px; height: 19px;
+  font-family: var(--font-inter); font-size: var(--typo-9-size);
+  line-height: var(--typo-9-lh); font-weight: 500; color: var(--color-6a6a6a);
+}
+
+/* 'Sliders' */
+#n1-71 { position: absolute; left: 223px; top: 0px; width: 120px; height: 50px; }
+#n1-72 { position: absolute; left: 0; top: 0; width: 120px; height: 50px;
+  background: var(--color-f3f4f6); border-radius: var(--radius-20);
+}
+#n1-73 { position: absolute; left: 33px; top: 16px; width: 53px; height: 19px;
+  font-family: var(--font-inter); font-size: var(--typo-9-size);
+  line-height: var(--typo-9-lh); font-weight: 500; color: var(--color-6a6a6a);
+}
+
+/* 'Classic' */
+#n1-74 { position: absolute; left: 357px; top: 0px; width: 110px; height: 50px; }
+#n1-75 { position: absolute; left: 0; top: 0; width: 110px; height: 50px;
+  background: var(--color-f3f4f6); border-radius: var(--radius-20);
+}
+#n1-76 { position: absolute; left: 23px; top: 15px; width: 56px; height: 19px;
+  font-family: var(--font-inter); font-size: var(--typo-9-size);
+  line-height: var(--typo-9-lh); font-weight: 500; color: var(--color-6a6a6a);
+}
+
+/* Group 14 (cards area) */
+#n1-77 { position: absolute; left: 19px; top: 355px; width: 392px; height: 481px; }
+
+/* Card A */
+#n1-78 { position: absolute; left: 0px; top: 0px; width: 185px; height: 225px; }
+#n1-79 { position: absolute; left: 0; top: 0; width: 185px; height: 225px; background: var(--color-ffffff);
+  border-radius: var(--radius-20); box-shadow: var(--shadow-2);
+}
+#n1-83 { position: absolute; left: 32px; top: 5px; width: 120px; height: 121.7578125px; }
+#n1-82 {
+  position: absolute; left: 47px; top: 109px; width: 91px; height: 11px; background: var(--color-000000); border-radius: 999px;
+  opacity: 1;
+}
+#n1-81 {
+  position: absolute; left: 11px; top: 136px; width: 163px; height: 44px;
+  font-family: var(--font-inter); font-size: var(--typo-10-size); line-height: var(--typo-10-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-84 { position: absolute; left: 11px; top: 189px; width: 44px; height: 22px; }
+#n1-85 { position: absolute; left: 0; top: 3px; width: 16px; height: 16px; background: var(--color-ff9633); border-radius: 4px; }
+#n1-86 {
+  position: absolute; left: 21px; top: 0px; width: 23px; height: 22px;
+  font-family: var(--font-roboto); font-size: var(--typo-11-size); line-height: var(--typo-11-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-80 { position: absolute; left: 157px; top: 201px; width: 24px; height: 24px; color: var(--color-ffffff); }
+
+/* Card B */
+#n1-87 { position: absolute; left: 207px; top: 0px; width: 185px; height: 225px; }
+#n1-88 { position: absolute; left: 0; top: 0; width: 185px; height: 225px; background: var(--color-ffffff);
+  border-radius: var(--radius-20); box-shadow: var(--shadow-2);
+}
+#n1-92 { position: absolute; left: 32px; top: 11px; width: 120px; height: 120px; }
+#n1-91 { position: absolute; left: 48px; top: 110px; width: 91px; height: 11px; background: var(--color-000000); border-radius: 999px; }
+#n1-90 {
+  position: absolute; left: 11px; top: 136px; width: 163px; height: 44px;
+  font-family: var(--font-inter); font-size: var(--typo-10-size); line-height: var(--typo-10-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-93 { position: absolute; left: 11px; top: 189px; width: 44px; height: 22px; }
+#n1-94 { position: absolute; left: 0; top: 3px; width: 16px; height: 16px; background: var(--color-ff9633); border-radius: 4px; }
+#n1-95 {
+  position: absolute; left: 21px; top: 0px; width: 23px; height: 22px;
+  font-family: var(--font-roboto); font-size: var(--typo-11-size); line-height: var(--typo-11-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-89 { position: absolute; left: 157px; top: 201px; width: 24px; height: 24px; }
+
+/* Card C */
+#n1-96 { position: absolute; left: 0px; top: 256px; width: 185px; height: 225px; }
+#n1-97 { position: absolute; left: 0; top: 0; width: 185px; height: 225px; background: var(--color-ffffff);
+  border-radius: var(--radius-20); box-shadow: var(--shadow-2);
+}
+#n1-101 { position: absolute; left: 20px; top: 0px; width: 150px; height: 137.700012207px; }
+#n1-100 { position: absolute; left: 40px; top: 107px; width: 110px; height: 15.760914803px; background: var(--color-000000); border-radius: 999px; }
+#n1-99 {
+  position: absolute; left: 11px; top: 136px; width: 163px; height: 44px;
+  font-family: var(--font-inter); font-size: var(--typo-10-size); line-height: var(--typo-10-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-102 { position: absolute; left: 11px; top: 203px; width: 44px; height: 22px; }
+#n1-103 { position: absolute; left: 0; top: 3px; width: 16px; height: 16px; background: var(--color-ff9633); border-radius: 4px; }
+#n1-104 {
+  position: absolute; left: 21px; top: 0px; width: 23px; height: 22px;
+  font-family: var(--font-roboto); font-size: var(--typo-11-size); line-height: var(--typo-11-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-98 { position: absolute; left: 157px; top: 201px; width: 24px; height: 24px; }
+
+/* Card D */
+#n1-105 { position: absolute; left: 207px; top: 256px; width: 185px; height: 225px; }
+#n1-106 { position: absolute; left: 0; top: 0; width: 185px; height: 225px; background: var(--color-ffffff);
+  border-radius: var(--radius-20); box-shadow: var(--shadow-2);
+}
+#n1-110 { position: absolute; left: 31px; top: 25px; width: 145px; height: 100.59375px; }
+#n1-109 { position: absolute; left: 40.5px; top: 110.992px; width: 112px; height: 11px; background: var(--color-000000); border-radius: 999px; }
+#n1-108 {
+  position: absolute; left: 11px; top: 136px; width: 158px; height: 44px;
+  font-family: var(--font-inter); font-size: var(--typo-10-size); line-height: var(--typo-10-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-111 { position: absolute; left: 11px; top: 203px; width: 44px; height: 22px; }
+#n1-112 { position: absolute; left: 0; top: 3px; width: 16px; height: 16px; background: var(--color-ff9633); border-radius: 4px; }
+#n1-113 {
+  position: absolute; left: 21px; top: 0px; width: 23px; height: 22px;
+  font-family: var(--font-roboto); font-size: var(--typo-11-size); line-height: var(--typo-11-lh); font-weight: 500; color: var(--color-3c2f2f);
+}
+#n1-114 { /* decorative reference retained but not rendered */ }
+
+/* Bottom bar group */
+#n1-115 { position: absolute; left: -19px; top: 856px; width: 456px; height: 90px; }
+#n1-116 { position: absolute; left: 0; top: 0; width: 456px; height: 90px; }
+#n1-117 { position: absolute; left: 0; top: 0; width: 456px; height: 90px; background: var(--color-ef2a39); }
+#n1-118 { position: absolute; left: 193px; top: -41px; width: 82px; height: 82px; background: var(--color-d9d9d9); border-radius: 50%; }
+
+#n1-119 { position: absolute; left: 122px; top: 0px; width: 224px; height: 82px; }
+#n1-120 { position: absolute; left: 0; top: 0; width: 82px; height: 82px; background: var(--color-ef2a39); border-radius: 50%; }
+#n1-121 { position: absolute; left: 142px; top: 0; width: 82px; height: 82px; background: var(--color-ef2a39); border-radius: 50%; }
+
+/* Bottom nav icons as instances at specified offsets from root */
+#n1-123 { position: absolute; left: 31px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); } /* home */
+#n1-124 { position: absolute; left: 113px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); } /* user */
+#n1-125 { position: absolute; left: 294px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); } /* comment */
+/* Fix invalid '?px' and match approximate right-side position for the heart icon */
+#n1-122 { position: absolute; left: 363px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); } /* heart - right-most */
+
+/* Small dot */
+#n1-126 { position: absolute; left: 41px; top: 905px; width: 4px; height: 4px; background: var(--color-ffffff); border-radius: 50%; }
+
+/* Floating CTA group */
+#n1-127 { position: absolute; left: 179px; top: 808px; width: 72px; height: 72px; }
+#n1-128 { position: absolute; left: 0; top: 0; width: 72px; height: 72px; background: var(--color-ef2a39); border-radius: 50%; box-shadow: var(--shadow-3); }
+#n1-129 { position: absolute; left: 28px; top: 28px; width: 16px; height: 16px; }
+#n1-130 { position: absolute; left: 0; top: 8px; width: 16px; height: 0px; border-top: 5px solid var(--color-ffffff); }
+#n1-131 { position: absolute; left: 8px; top: 0; width: 0px; height: 16px; border-left: 5px solid var(--color-ffffff); }

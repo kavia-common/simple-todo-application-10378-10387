@@ -1,0 +1,196 @@
+:root {
+  /* Colors */
+  --color-ffffff: #ffffff;
+  --color-3c2f2f: #3c2f2f;
+  --color-6a6a6a: #6a6a6a;
+  --color-d9d9d9: #d9d9d9;
+  --color-ef2a39: #ef2a39;
+  --color-f5f5f5: #f5f5f5;
+  --color-f3f4f6: #f3f4f6;
+  --color-000000: #000000;
+  --color-ff9633: #ff9633;
+
+  /* Typography families */
+  --font-lobster: "Lobster", cursive, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+  --font-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+  --font-roboto: "Roboto", system-ui, -apple-system, Segoe UI, Inter, Helvetica, Arial, sans-serif;
+  --font-inter: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+
+  /* Typography presets (sizes, line-heights) */
+  --typo-5-size: 45px; /* Lobster */
+  --typo-5-lh: 60.6094px;
+  --typo-6-size: 18px; /* Poppins */
+  --typo-6-lh: 27px;
+  --typo-7-size: 18px; /* Roboto */
+  --typo-7-lh: 21.09375px;
+  --typo-8-size: 16px; /* Inter */
+  --typo-8-lh: 19.363636px;
+  --typo-9-size: 16px; /* Inter */
+  --typo-9-lh: 19.363636px;
+  --typo-10-size: 16px; /* Inter */
+  --typo-10-lh: 19.363636px;
+  --typo-11-size: 16px; /* Roboto */
+  --typo-11-lh: 21.550001px;
+
+  /* Border radius */
+  --radius-20: 20px;
+  --radius-35: 35px;
+
+  /* Shadows */
+  --shadow-0: 0px 4px 19px 0px rgba(0,0,0,1);
+  --shadow-1: 0px 10px 18px -1px rgba(0,0,0,1);
+  --shadow-2: 0px 6px 17px 0px rgba(0,0,0,1);
+  --shadow-3: 0px 5px 16px 5px rgba(0,0,0,1);
+
+  /* Canvas */
+  --screen-width: 430px;
+  --screen-height: 932px;
+  --root-bg: var(--color-ffffff);
+}
+
+/* Reset */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--root-bg);
+}
+img { display: block; }
+
+/* Absolute layout container to match Figma frame coordinates */
+.fg-screen {
+  position: relative;
+  width: var(--screen-width);
+  height: var(--screen-height);
+  background: var(--color-ffffff);
+  overflow: hidden;
+  border-radius: var(--radius-35);
+  margin: 0 auto;
+}
+
+/* Generic primitives */
+.rect { position: absolute; }
+.group, .frame, .boolean-op { position: absolute; }
+.text { position: absolute; white-space: pre-wrap; }
+.icon, .ellipse { position: absolute; }
+
+/* Utility for rounded corners by token */
+.round-20 { border-radius: var(--radius-20); }
+.round-35 { border-radius: var(--radius-35); }
+
+/* Tokenized fills */
+.fill-ffffff { background-color: var(--color-ffffff); }
+.fill-3c2f2f { color: var(--color-3c2f2f); }
+.fill-6a6a6a { color: var(--color-6a6a6a); }
+.bg-6a6a6a { background-color: var(--color-6a6a6a); }
+.fill-d9d9d9 { background-color: var(--color-d9d9d9); }
+.fill-ef2a39 { background-color: var(--color-ef2a39); }
+.fill-f5f5f5 { color: var(--color-f5f5f5); }
+.bg-f3f4f6 { background-color: var(--color-f3f4f6); }
+.fill-000000 { background-color: var(--color-000000); }
+.fill-ff9633 { background-color: var(--color-ff9633); }
+
+/* Shadows */
+.shadow-0 { box-shadow: var(--shadow-0); }
+.shadow-1 { box-shadow: var(--shadow-1); }
+.shadow-2 { box-shadow: var(--shadow-2); }
+.shadow-3 { box-shadow: var(--shadow-3); }
+
+/* Typography helper classes (apply exact family/size/weight/line-height) */
+.typo-5 {
+  font-family: var(--font-lobster);
+  font-size: var(--typo-5-size);
+  line-height: var(--typo-5-lh);
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--color-3c2f2f);
+  text-align: left;
+}
+.typo-6 {
+  font-family: var(--font-poppins);
+  font-size: var(--typo-6-size);
+  line-height: var(--typo-6-lh);
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-6a6a6a);
+  text-align: left;
+}
+.typo-7 {
+  font-family: var(--font-roboto);
+  font-size: var(--typo-7-size);
+  line-height: var(--typo-7-lh);
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-3c2f2f);
+  text-align: left;
+}
+.typo-8 {
+  font-family: var(--font-inter);
+  font-size: var(--typo-8-size);
+  line-height: var(--typo-8-lh);
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-f5f5f5);
+  text-align: left;
+}
+.typo-9 {
+  font-family: var(--font-inter);
+  font-size: var(--typo-9-size);
+  line-height: var(--typo-9-lh);
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-6a6a6a);
+  text-align: left;
+}
+.typo-10 {
+  font-family: var(--font-inter);
+  font-size: var(--typo-10-size);
+  line-height: var(--typo-10-lh);
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-3c2f2f);
+  text-align: left;
+}
+.typo-11 {
+  font-family: var(--font-roboto);
+  font-size: var(--typo-11-size);
+  line-height: var(--typo-11-lh);
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--color-3c2f2f);
+  text-align: left;
+}
+
+/* Small accessible helper for visually hidden (if needed) */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 1px 1px); white-space: nowrap; border: 0;
+}
+
+/* Make the page center on larger viewports while preserving exact design ratio */
+.page-wrap {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f0f0f0;
+  padding: 16px;
+}
+
+/* Improve keyboard focus visibility when enabled by JS */
+.show-focus-outlines :focus {
+  outline: 2px solid #2563EB; /* theme primary */
+  outline-offset: 2px;
+}
+
+/* Button reset used for clickable icon/group elements */
+.btn-unstyled {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Ensure images preserve aspect as per design */
+img.fit-cover { width: 100%; height: 100%; object-fit: cover; }
